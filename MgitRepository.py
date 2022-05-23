@@ -1,13 +1,13 @@
 import configparser
 import os
 
-from utils import repo_path
+from utils import repo_file
 
 class MgitRepository:
     "An MGit Repository"
 
     workTreeDir = None # path
-    gitDir = None # path
+    mGitDir = None # path
     config = None
 
     def __init__(self, path, force=False):
